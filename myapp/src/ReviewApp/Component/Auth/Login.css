@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.lcontainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Stack children vertically on smaller screens */
+  background-color: rgb(197, 144, 247);
+}
+
+.leftbox,
+.rightbox {
+  width: 100%;
+  height: 50vh; /* Adjust the height as needed */
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+.text h1 {
+  padding: 20px; /* Add some padding for better spacing */
+  color: white;
+}
+
+.text p {
+  padding: 0 20px 20px 20px; /* Adjust the padding for better spacing */
+  color: white;
+}
+
+.image {
+  padding: 20px; /* Add padding for better spacing */
+  text-align: center; /* Center the image */
+}
+
+.image img {
+  width: 500px; /* Make the image responsive */
+  max-height: 400px; /* Ensure it doesn't exceed its container */
+}
+
+.image1 {
+  margin-top: 80px;
+  background-image: url(../image/Group\ 11665\ \(2\).png);
+  /* background-size: cover; Ensure the background image covers the div */
+  height: 80vh; /* Adjust the height as needed */
+  background-repeat: no-repeat;
+  
+  width: 500px;
+  
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+}
+
+.login {
+  padding: 20px;
+  font-size: 13px;
+  text-align: center; /* Center the text */
+}
+
+.login h1 {
+  color: rgb(104, 22, 180);
+}
+
+.down {
+  padding-top: 20px;
+  text-align: center; /* Center the text */
+}
+
+button {
+  color: white;
+  background-color: rgb(63, 26, 97);
+  border-radius: 4px;
+  width: 80px;
+  height: 4vh;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.down p {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.down1 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  /* Apply styles for screens wider than 768px (tablets and desktops) */
+  .lcontainer {
+    flex-direction: row; /* Display children side by side */
+  }
+
+  .leftbox,
+  .rightbox {
+    width: 50%;
+    height: 100vh;
+  }
+}
